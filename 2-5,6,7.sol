@@ -16,6 +16,9 @@ contract ZombieFeeding is ZombieFactory {
 
     Storage는 블록체인 상에 영구적으로 저장되는 변수를 의미하지.
     Memory는 임시적으로 저장되는 변수로, 컨트랙트 함수에 대한 외부 호출들이 일어나는 사이에 지워지지. 
+
+    함수 선언하고
+    reqire 로 
 */
 
 contract SandwichFactory {
