@@ -58,7 +58,7 @@ feedOnKitty라는 함수를 생성한다. 이 함수는 _zombieId와 _kittyId라
 
 */
 
-// 다
+// 다수의 값 반환하는 방법
 
 function multipleReturns() internal returns(uint a, uint b, uint c) {
   return (1, 2, 3);
