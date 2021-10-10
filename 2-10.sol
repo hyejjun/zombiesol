@@ -1,7 +1,19 @@
 pragma solidity ^0.4.19;
-
 import "./zombiefactory.sol";
-
+contract KittyInterface {
+  function getKitty(uint256 _id) external view returns (
+    bool isGestating,
+    bool isReady,
+    uint256 cooldownIndex,
+    uint256 nextActionAt,
+    uint256 siringWithId,
+    uint256 birthTime,
+    uint256 matronId,
+    uint256 sireId,
+    uint256 generation,
+    uint256 genes
+  );
+}
 contract ZombieFeeding is ZombieFactory {
 
   function feedAndMultiply(uint _zombieId, uint _targetDna) public {
@@ -15,8 +27,7 @@ contract ZombieFeeding is ZombieFactory {
 }
 
 /*
-    자리수 맞춰주고
-    평균내서 
-    함수 호출임
+다른 컨트랙트와 상호작용하기
+
 
 */
